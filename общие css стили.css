@@ -1,0 +1,69 @@
+*, *:after, *:before {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+}
+ul {
+list-style: none;
+}
+a {
+text-decoration: none;
+outline: none;
+}
+img {
+display: block;
+width: 100%;
+}
+h2 {
+    font-family: Roboto-Light;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2, .h2 {
+    font-size: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Playfair Display';
+font-weight: normal;
+letter-spacing: 1px;
+}
+body {
+font-family: 'Open Sans', arial, sans-serif;
+font-size: 14px;
+line-height: 1;
+color: #373737;
+background: #f7f7f7;
+}
+/* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+content: "";
+display: table;
+clear: both;
+} 
+/* стилевой класс, который управляет шириной контейнера сетки*/
+.container {
+margin: 0 auto;
+width: 100%;
+max-width: 960px;
+padding: 0 15px;
+} 
+.topbutton {
+width:100px;
+border:2px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:10px;
+position:fixed;
+bottom:50px;
+right:50px;
+cursor:pointer;
+color:#333;
+font-family:verdana;
+font-size:12px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+}
